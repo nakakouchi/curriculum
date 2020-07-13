@@ -1,11 +1,11 @@
 package study;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 
-//import java.util.TreeSet;
+
 
 
 
@@ -34,7 +34,7 @@ public class Study {
     	shohinList.add(SHOP_SHOHIN_01);
     	shohinList.add(SHOP_SHOHIN_02);
     	shohinList.add(SHOP_SHOHIN_03);
-    	
+
 
 
 
@@ -46,7 +46,7 @@ public class Study {
          * [shopList.get(1)と180はキーと値の関係性。キーを指定すればそのキーと結ばれている値を取得することができる]
          *
          */
-    	HashMap<String, Integer> shopMap = new HashMap<String, Integer>();
+    	LinkedHashMap<String, Integer> shopMap = new LinkedHashMap<String, Integer>();
         shopMap.put(shohinList.get(0), 125);
         shopMap.put(shohinList.get(1), 180);
         shopMap.put(shohinList.get(2), 350);
@@ -55,9 +55,12 @@ public class Study {
         // ③ カリキュラムを参考に拡張for文を使って、課題の画像と同じ表示になるよう記述してください。
         // 「shohinList」と「shopMap」が保持する値を上手く利用しましょう。
         for (String s : shopMap.keySet()) {
-	            System.out.println(s + "=" + shopMap.get(s) + "円になります！");
+        	System.out.println(s + "=" + shopMap.get(s) + "円になります！");
 
         }
+
+
+
 
 
     }
