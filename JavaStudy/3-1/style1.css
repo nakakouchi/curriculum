@@ -1,0 +1,38 @@
+.wrapper {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.crearfix::after {
+	content: ''; 
+    display: block; 
+    clear: both;
+}
+
+.header {
+	background-color: #141f40;
+	height: 100px;
+}
+
+.main {
+	height: 250px;
+}
+
+.left {
+	background-color: #80bfa8;
+	height: 100%;
+	width: 150px;
+	float: left;
+}
+
+.right {
+	background-color: #8c2727;
+	height: 100%;
+	width: 250px;
+	float: right;
+}
+
+.footer {
+	background-color: #d98d30;
+	height: 100px;
+}
