@@ -15,6 +15,7 @@ public class study {
       //   firstNameには自分の名前、lastNameには自分の名字で初期化しなさい
     	String firstName = "Ryou";
     	String lastName = "Nakakouchi";
+    	
 
         //getName関数の呼び出しと出力
         System.out.println(getName(firstName, lastName));
