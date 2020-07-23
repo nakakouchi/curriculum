@@ -1,0 +1,58 @@
+.wrapper {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	height: 150px;
+	background-color: #ffff00;
+}
+
+.main {
+	width: 100%;
+	height: 150px;
+	display: flex;
+}
+
+.light-blue {
+	width: 200px;
+	height: 100%;
+	background-color: #33ffff;
+}
+
+.red {
+	width: 200px;
+	height: 100%;
+	background-color: #ff0000;
+}
+
+.blue {
+	width: 200px;
+	height: 100%;
+	background-color: #0000ff;
+}
+
+.aside {
+	width: 100%;
+	height: 150px;
+	display: flex;
+}
+
+.green {
+	width: 450px;
+	height: 100%;
+	background-color: #00ff00;
+}
+
+.pink {
+	width: 150px;
+	height: 100%;
+	background-color: #ff00ff;
+}
+
+.footer {
+	width: 100%;
+	height: 150px;
+	background-color: #33ffff;
+}
