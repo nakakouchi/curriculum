@@ -5,7 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<!-- <link rel="stylesheet" href="/Check3/CSS/style.css"> -->
 </head>
 <body>
   <div class="header">
