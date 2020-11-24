@@ -74,7 +74,7 @@ public class EmployeeService {
             preparedStatement.setString(2, id );
 
             // 問⑤ UPDATEを実行する文を記述
-            // select文の場合には、executeQuery() メソッド
+            // insert文とupdate文の場合には、executeUpdate() メソッド
             preparedStatement.executeUpdate();
 
             /*
