@@ -1,5 +1,5 @@
 // 問１
-let scores = [10, 14, 20, 25];
+let scores = [10, 15, 20, 25];
 console.log(scores);
 
 for(let i=0; i<scores.length; i++){
