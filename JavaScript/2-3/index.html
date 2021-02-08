@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #btn {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        cursor: pointer;;
+        font-weight: bold;
+        user-select: none;
+    }
+    #btn:hover {
+        opacity: 0.9;
+    }
+</style>
+</head>
+<body>
+  <div id="btn">クリック</div>
+    <script>
+
+  //       //①配列で「大吉」「中吉」「凶」を準備      
+  //       //②乱数を発生させて、その値を取得
+  //       //③取得した **btn** の「クリック」という文字を配列の中身の文字にランダムに変化させる
+
+  const btn = document.getElementById('btn');
+  btn.addEventListener('click', function() {
+    var omikuji = ['大吉','中吉','凶'];
+    var random = Math.floor(Math.random()*omikuji.length);
+    // console.log(omikuji[random]);
+
+
+  });
+  btn.addEventListener('mousedown', function(){
+    this.className = 'pushed';
+  });
+  btn.addEventListener('mouseup', function(){
+    this.className = '';
+  });
+
+
+  // btnを取得
+  // const btn = document.getElementById('btn');
+  // //   // ボタンがクリックされたら、という処理の始まり
+  //   btn.addEventListener('click', function() {
+  //     var n = Math.random()
+  //   if(n < 0.3){
+  //     this.textContent = '大吉'; // 30%
+  //   }else if (n < 0.45){
+  //     this.textContent = '吉';  // 15%
+  //   }else if (n < 0.60){
+  //     this.textContent = '中吉';  // 15%
+  //   }else if (n < 0.85){
+  //     this.textContent = '小吉';  // 15%
+  //   }else{
+  //     this.textContent = '凶';  // 15%
+  //   }
+
+  // });
+  // btn.addEventListener('mousedown', function(){
+  //   this.className = 'pushed';
+  // });
+  // btn.addEventListener('mouseup', function(){
+  //   this.className = '';
+  // });
+      
+
+
+
+    </script>
+</body>
+</html>
+
+
