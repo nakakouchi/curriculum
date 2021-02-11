@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text1" placeholder="入力してください">
+    <input type="button" value="追加" onclick="addText();">
+    <input type="button" value="削除" onclick="deleteText();">
+    <br>
+    <textarea id="area1" cols="50" rows="8" placeholder="ここに出力されます"></textarea>
+
+    <script>   
+    function addText() {
+        //入力欄のテキストを取得
+        let text1 = document.getElementById('text1').value;
+        //出力欄に入力された文字列を足していく
+        // [+=]値の追加
+        // ["\n"]改行
+        document.getElementById("area1").textContent += text1 + "\n";
+
+        // console.log(text1);
+    }
+
+    function deleteText() {
+        //出力欄のテキストを空にする
+        document.getElementById("area1").textContent="";
+        
+        //入力欄のテキストを空にする
+        var textForm = document.getElementById("text1");
+        textForm.value = '';
+    }
+    </script>
+</body>
+</html>
