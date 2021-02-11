@@ -34,10 +34,14 @@
   btn.addEventListener('click', function() {
     var omikuji = ['大吉','中吉','凶'];
     var random = Math.floor(Math.random()*omikuji.length);
+
+    // textContentプロパティは、htmlのタグを文字としてそのまま出力する
+    btn.textContent = omikuji[random];
+
     // console.log(omikuji[random]);
 
-
   });
+  // 要素.addEventListener(イベント, 関数, オプション);
   btn.addEventListener('mousedown', function(){
     this.className = 'pushed';
   });
@@ -45,7 +49,7 @@
     this.className = '';
   });
 
-
+  // 参考
   // btnを取得
   // const btn = document.getElementById('btn');
   // //   // ボタンがクリックされたら、という処理の始まり
