@@ -15,7 +15,7 @@ public class study {
       //   firstNameには自分の名前、lastNameには自分の名字で初期化しなさい
     	String firstName = "Ryou";
     	String lastName = "Nakakouchi";
-    	
+
 
         //getName関数の呼び出しと出力
         System.out.println(getName(firstName, lastName));
@@ -25,7 +25,7 @@ public class study {
         //   要素が奇数の場合には「nは奇数です。」と出力されます。
         for (int num = 0; num < arr.length; num++){
         	isOdd(num);
-        	}
+      }
     }
 
     //② 関数を定義しなさい。

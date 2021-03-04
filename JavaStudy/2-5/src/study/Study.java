@@ -52,6 +52,7 @@ public class Study {
         shopMap.put(shohinList.get(2), 350);
         shopMap.put(shohinList.get(3), 100);
 
+
         // ③ カリキュラムを参考に拡張for文を使って、課題の画像と同じ表示になるよう記述してください。
         // 「shohinList」と「shopMap」が保持する値を上手く利用しましょう。
         for (String s : shopMap.keySet()) {
