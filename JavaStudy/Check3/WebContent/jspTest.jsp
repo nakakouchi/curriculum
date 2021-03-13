@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="/Check3/CSS/style.css">
 </head>
 <body>
- <%@ include file="header.jsp" %>
+<%@ include file="header.jsp" %>
  <div class="main">
    <table >
      <tr>
@@ -23,6 +23,6 @@
    </table>
 
  </div>
- <%@ include file="footer.jsp" %>
+<%@ include file="footer.jsp" %>
 </body>
 </html>
