@@ -40,15 +40,20 @@ public class ExException {
         do {
 
             System.out.println(CONST_COMMON_INIT_INFO);
+//          標準入力の情報を使って処理したい場合はScannerクラスを利用する
+//          import java.util.Scanner;　必要
             sc = new Scanner(System.in);
 
             try {
-
+//			    nextInt()メソッドは入力した値を返却してくれる
+//          	execute:実行する
                 final int execute = sc.nextInt();
 
                 // 早期処理戻し
+//              ==:同じなら処理
                 if (execute == -1) break;
                 // オペレーションエラー
+//              !=:違うなら処理
                 if (execute != 1) {
                       System.out.println(CONST_COMMON_MSG_ERROR_EXCEPTION);
                       continue;
@@ -59,12 +64,11 @@ public class ExException {
 
                 switch (parameter) {
                 case CONST_EXCEPTION_TRIGER_NULL:
-                    // 問①: 強制的に「NullPointerException」を発生させるメソッドを作成し、呼び出しなさい。
+                    // 問①: 強制的に「NullPointerException(ヌルポ)」を発生させるメソッドを作成し、呼び出しなさい。
                     // 問①は最下部にもあります。
                     // ルール: ここへ作成したメソッドを呼び出す
-                	throw new NullPointerException(CONST_MSG_NULLPO);
-
-//                    break;
+                	test();
+                  break;
                 case CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS:
                     // 問②: 「throw」を使用せずに「ArrayIndexOutOfBoundsException」を発生させる処理を記述しなさい。
                     // Tips: ご自身で配列を準備してください（使用する配列の型、要素数は自由）
@@ -108,8 +112,8 @@ public class ExException {
      */
     // ここへ記述
     private static void test () throws  NullPointerException{
-    	System.out.println(CONST_MSG_NULLPO);
-    }
+        throw new NullPointerException(CONST_MSG_NULLPO);
+      }
 
     /**
      * 例外処理のメッセージを出力1
