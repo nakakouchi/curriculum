@@ -21,6 +21,7 @@ public class SelectServlet extends HttpServlet {
 
         request.setCharacterEncoding("UTF-8");
         // 問① select.htmlから渡された値を受け取るために下記を修正しましょう。
+//      getParameterメソッドの戻り値はString型!!
         String value = request.getParameter("month");
         response.setContentType("text/html; charset=UTF-8");
         PrintWriter out = response.getWriter();
