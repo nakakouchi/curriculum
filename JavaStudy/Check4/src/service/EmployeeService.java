@@ -89,7 +89,7 @@ public class EmployeeService {
 
             // SQLを実行。実行した結果をresultSetに格納。
             // select文の場合には、executeQuery() メソッド
-            resultSet = preparedStatement.executeQuery();
+            resultSet = preparedStatement.executeQuery(SQL_SELECT);
 
             while (resultSet.next()) {
                 // 問⑦ tmpName,tmpComment,tmpLoginTimeに適当な値を入れてください。
